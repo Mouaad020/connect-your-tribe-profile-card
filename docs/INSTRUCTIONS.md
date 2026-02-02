@@ -1,31 +1,46 @@
 
-# Connect Your Tribe - Visitekaartje
-Redesign je visitekaartje met NodeJS en data uit de whois API van FDND.
+![image](https://user-images.githubusercontent.com/1391509/188114337-54f6a9eb-dc0c-42e9-a455-6ac636edb7c6.jpeg)
 
-## Context
-Deze leertaak hoort bij sprint 7 "Connect Your Tribe". Dit is een leertaak die je individueel uitvoert.
+# Your Tribe - Visitekaartje
 
-## Briefing
-Elke frontender bij FDND stelt zichzelf binnen de tribe voor door middel van een visitekaartje. De data voor het visitekaartje staat in een database die te bereiken is via de whois API van FDND. Met deze data ga je jouw visitekaartje redesignen.
+Ontwerp en maak met HTML, CSS en JS een visitekaartje.
 
-## Doel van deze opdracht
-Je leert met NodeJS jouw visitekaartje server-side te maken.
+### Context
 
-## Werkwijze
-Deze leertaak wordt behandeld in de eerste week van sprint 7 met verschillende workshops en practica:
+Deze leertaak hoort bij Sprint 1 "Your Tribe". Dit is een leertaak die je individueel uitvoert.
 
-- [Sprint planning](sprint-planning.md) - Maandag
-- [Visitekaartje met NodeJS](visitekaartje-met-nodejs.md) - Maandag
-- [REST API en JSON](rest-api-en-json.md) - Woensdag
-- [Code/Design review NodeJS Code](code-design-review-nodejs.md) - Vrijdag
+
+### Briefing
+
+Elke frontender bij FDND stelt zichzelf binnen de tribe voor door middel van een visitekaartje. Maak een visitekaartje op basis van [dit voorbeeld](https://fdnd-task.github.io/your-tribe-profile-card/) en publiceer dat via GitHub Pages.
+
+
+### Doel van deze opdracht
+
+Na het volgen van deze leertaak heb je zelf een visitekaartje ontworpen en gemaakt. Je leert werken met de Development Lifecycle. Je hebt hiervoor een aantal eigen ontwerpbeslissingen gemaakt en HTML (voor de structuur), CSS (voor de vormgeving) en JS (voor de interactie) gebruikt om het ontwerp te bouwen. Tot slot heb je jouw visitekaartje gepubliceerd via GitHub Pages en met een aantal klasgenoten getest of het werkt zoals je bedoelde.
+
+
+
+### Werkwijze
+
+Deze leertaak wordt behandeld in de eerste week van Sprint 1 met verschillende workshops:
+
+- [Visitekaartje ontwerpen, maken en online publiceren](visitekaartje-ontwerpen-maken-en-online-publiceren.md) - Maandag
+- [CSS Basics, Properties en selectors](css-basics-properties-en-selectors.md) - Dinsdag
+- [Breakdown schets](breakdown-schets.md) - Woensdag
+- [JS en Interactie](js-en-interactie.md) - Donderdag
+- [Code/Design review visitekaartje](code-design-review-visitekaartje.md) - Vrijdag
+
+
 
 
 ## Definition of Done
 
 Deze opdracht is done als:
 
-- [ ] Je hebt je visitekaartje gemaakt met NodeJS, Express en Liquid
-- [ ] Je visitekaartje gebruikt gegevens uit onze JSON REST API
-- [ ] Je hebt een herontwerp van je visitekaartje gemaakt en die doorgevoerd in je frontend code
-- [ ] Je hebt feedback op je NodeJS code en frontend code gehad en zelf feedback gegeven
-- [ ] Je kaartje is live te bekijken
+- [ ] Je visitekaartje staat op GitHub en heeft een live url
+- [ ] Je hebt iteratief gewerkt met behulp van de development-lifecycle
+- [ ] Je hebt een breakdown-schets gemaakt en hierop feedback gekregen in GitHub Issues
+- [ ] Je hebt het ontwerp voor het visitekaartje gerealiseerd met HTML, CSS en/of JS en je hebt je code uitgelegd in comments
+- [ ] Je hebt een code/design review gedaan en feedback gekregen in GitHub Issues
+

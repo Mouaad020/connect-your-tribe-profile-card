@@ -1,14 +1,20 @@
 {% render 'partials/head.liquid' %}
 
-<article>
-  <header>
-    <h1>Hallo</h1>
-    <p>mijn naam is</p>
-  </header>
+  <div class="container">
+    <div class="kaartje">
+      <h1>Mouaad Chakroun</h1>
+      <div class="containerimg">
+        <img class="foto1" src="assets/unnamed (2).jpg">
+      </div>
+      <dl class="pages">
+        <dt class="wiebenik">Wie ben ik?</dt>
+        <dt class="mijnervaring">Mijn ervaring</dt>
+        <dt class="hobby">Hobby's</dt>
+      </dl>
+    </div>
+    <div class="image"></div>
+  </div>
 
-  <p>{{ person.name }}</p>
-
-  <footer></footer>
-</article>
+  <script src="scripts/script.js"></script>
 
 {% render 'partials/foot.liquid' %}
