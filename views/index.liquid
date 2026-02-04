@@ -1,19 +1,64 @@
 {% render 'partials/head.liquid' %}
 
-  <div class="container">
-    <div class="kaartje">
-      <h1>Mouaad Chakroun</h1>
-      <div class="containerimg">
-        <img class="foto1" src="assets/unnamed (2).jpg">
-      </div>
-      <dl class="pages">
-        <dt class="wiebenik">Wie ben ik?</dt>
-        <dt class="mijnervaring">Mijn ervaring</dt>
-        <dt class="hobby">Hobby's</dt>
-      </dl>
+<section class="container">
+  <div class="profile-card">
+    <div>
+      <img class="foto1" src="assets/unnamed (2).jpg" alt="Profielfoto van {{ person.name }}">
     </div>
-    <div class="image"></div>
+    
+    <h1>{{ person.name }}</h1>
+    
+    <nav>
+      <button>Wie ben ik?</button>
+      <button>Mijn ervaring</button>
+      <button>Hobby's</button>
+    </nav>
   </div>
+</section>
+
+<section class="container-2">
+  <div class="profile-card">
+    <div>
+      <img class="foto1" src="assets/unnamed (2).jpg" alt="Profielfoto van {{ person.name }}">
+    </div>
+    
+    <h2>Wie ben ik?</h2>
+    
+    <div>
+      <p> Mijn naam is Mouaad, ik ben 20 jaar en kom uit Amsterdam. Momenteel studeer ik Front-end Design & Development.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container-3">
+  <div class="profile-card">
+    <div>
+      <img class="foto1" src="assets/unnamed (2).jpg" alt="Profielfoto van {{ person.name }}">
+    </div>
+    
+    <h2>Mijn ervaring</h2>
+    
+    <div>
+      <p>Hiervoor heb ik de opleiding HBO-ICT Software Engineering gevolgd. Helaas heb ik het tweede semester niet behaald. Het tempo lag voor mij te hoog en ik moest in korte tijd veel nieuwe kennis opdoen. Tijdens die opleiding heb ik wel interesse ontwikkeld in front-end, daarom heb ik besloten om over te stappen naar de opleiding Front-end Design & Development.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="container-4">
+  <div class="profile-card">
+    <div>
+      <img class="foto1" src="assets/unnamed (2).jpg" alt="Profielfoto van {{ person.name }}">
+    </div>
+    
+    <h2>Hobby's</h2>
+    
+    <div>
+      <p>In mijn vrije tijd game ik graag en doe ik aan verschillende sporten.</p>
+    </div>
+  </div>
+</section>
+
 
   <script src="scripts/script.js"></script>
 
