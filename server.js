@@ -17,7 +17,7 @@ const personResponseJSON = await personResponse.json()
 
 // Controleer eventueel de data in je console
 // (Let op: dit is _niet_ de console van je browser, maar van NodeJS, in je terminal)
-// console.log(personResponseJSON)
+console.log(personResponseJSON)
 
 
 // Maak een nieuwe Express applicatie aan, waarin we de server configureren
@@ -35,16 +35,33 @@ app.engine('liquid', engine.express());
 // Let op: de browser kan deze bestanden niet rechtstreeks laden (zoals voorheen met HTML bestanden)
 app.set('views', './views')
 
+app.get('/oefenen', async function (request, response) {
+   // Render practice.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
+   response.render('practice.liquid', {person: personResponseJSON.data})
+})
+
 // Zorg dat werken met request data makkelijker wordt
 app.use(express.urlencoded({extended: true}))
+
+
+
 
 // Om Views weer te geven, heb je Routes nodig
 // Maak een GET route voor de index (meestal doe je dit in de root, als /)
 // In je visitekaartje was dit waarschijnlijk index.html
-app.get('/', async function (request, response) {
-   // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
-   response.render('index.liquid', {person: personResponseJSON.data})
-})
+
+
+  app.get("/", async function (request, response) {
+  // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
+ 
+  const personData = personResponseJSON.data;
+  // const customData = JSON.parse(personData.custom);
+
+  personData.custom = JSON.parse(personData.custom);
+ 
+  response.render("index.liquid", { person: personData});
+});
+   
 
 // Had je meer pagina's in je oude visitekaartje? Zoals een contact.html?
 // Maak daar dan meer Routes voor aan, en koppel ze aan Views
