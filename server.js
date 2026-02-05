@@ -51,15 +51,14 @@ app.use(express.urlencoded({extended: true}))
 // In je visitekaartje was dit waarschijnlijk index.html
 
 
-  app.get("/", async function (request, response) {
+app.get("/", async function (request, response) {
   // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
+  
+    const personData = personResponseJSON.data;
+    const customData = JSON.parse(personData.custom);
+    // personData.custom = JSON.parse(personData.custom);
  
-  const personData = personResponseJSON.data;
-  // const customData = JSON.parse(personData.custom);
-
-  personData.custom = JSON.parse(personData.custom);
- 
-  response.render("index.liquid", { person: personData});
+    response.render("index.liquid", { person: personData, custom: customData});
 });
    
 
