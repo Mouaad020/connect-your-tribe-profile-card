@@ -1,64 +1,49 @@
 {% render 'partials/head.liquid' %}
 
-<section class="container">
+<section class="container-1">
   <div class="profile-card">
-    <div>
-      <img class="foto1" src="assets/unnamed (2).jpg" alt="">
+    <img class="foto1" src="/profielfoto.jpg" alt="profielfoto">
+
+    <h1>{{ person.name }}</h1>
+
+    <div class="custom-container">
+      <a href="#">{{ custom.who }}</a>
+      <a href="#">{{ custom.experience }}</a>
+      <a href="#">{{ custom.hobby }}</a>
     </div>
-    
-    <h1>{{ person.custom.name }}</h1>
-    
-    <nav>
-      <button>{{ custom.who }}</button>
-      <button>{{ custom.experience }}</button>
-      <button>{{ custom.hobby }}</button>
-    </nav>
   </div>
 </section>
 
 <section class="container-2">
   <div class="profile-card">
-    
-      <img class="foto1" src="assets/unnamed (2).jpg" alt="">
-    
-    
+    <img class="foto1" src="/profielfoto.jpg" alt="profielfoto">
+
     <h2>{{ custom.who }}</h2>
-    
-    <div>
-      <p>{{ custom.bio1 }}</p>
-    </div>
+
+    <p>{{ custom.bio1 }}</p>
   </div>
 </section>
 
 <section class="container-3">
   <div class="profile-card">
-    
-      <img class="foto1" src="assets/unnamed (2).jpg" alt="">
-    
-    
+    <img class="foto1" src="/profielfoto.jpg" alt="profielfoto">
+
     <h2>{{ custom.experience }}</h2>
-    
-    <div>
-      <p>{{ custom.bio2 }}</p>
-    </div>
+
+    <p>{{ custom.bio2 }}</p>
   </div>
 </section>
 
 <section class="container-4">
   <div class="profile-card">
-    
-      <img class="foto1" src="assets/unnamed (2).jpg" alt="">
-    
-    
+    <img class="foto1" src="/profielfoto.jpg" alt="profielfoto">
+
     <h2>{{ custom.hobby }}</h2>
-    
-    <div>
-      <p>{{ custom.bio3}}</p>
-    </div>
+
+    <p>{{ custom.bio3 }}</p>
   </div>
 </section>
 
-
-  <script src="scripts/script.js"></script>
+<script src="script.js"></script>
 
 {% render 'partials/foot.liquid' %}

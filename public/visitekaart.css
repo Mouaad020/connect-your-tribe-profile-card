@@ -2,10 +2,19 @@ body{
   background-color: #F1F6FF;
 }
 
-.container {
+section {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.container-1{
   min-height: 70vh;
 }
 
@@ -17,6 +26,11 @@ body{
   text-align: center;
 }
 
+.custom-container{
+  display: flex;
+  gap: 2em;
+}
+
 
 .foto1{
   width: 120px;
@@ -25,16 +39,10 @@ body{
   border: 4px solid white;
 }
 
-button{
-  background: none;
-  border: none;
-}
+
 
 
 .container-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   animation: slideFromLeft linear forwards;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
@@ -42,9 +50,6 @@ button{
 }
 
 .container-3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
   animation: slideFromLeft linear forwards;
   animation-timeline: view();
@@ -53,9 +58,6 @@ button{
 
 
 .container-4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 40vh;
   animation: slideFromLeft linear forwards;
   animation-timeline: view();
